@@ -1,0 +1,218 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2641;
+  padding: 105px 735px 125px 115px;
+  background-image: url(../../images/spiral.svg);
+  background-position-y: 250px;
+  background-repeat: no-repeat;
+  &__info {
+    max-width: 540px;
+  }
+  &__line {
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 63px;
+  }
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__img {
+    width: 440px;
+    height: 550px;
+    position: absolute;
+    right: 110px;
+    bottom: -145px;
+  }
+  & a {
+    text-decoration: none;
+  }
+  .mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-bottom: 94px;
+    padding-left: 24px;
+    margin-top: 500px;
+    text-align: center;
+    &__info {
+      max-width: 327px;
+    }
+    &__line {
+      display: none;
+    }
+    &__title {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: -1px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-family: "Karla";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    &__img {
+      width: 440px;
+      height: 550px;
+      position: absolute;
+      top: -465px;
+      left: 0;
+      right: 0;
+    }
+  }
+  input {
+    display: none;
+  }
+  .mob {
+    display: none;
+  }
+  input:checked ~ .mob {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 80vh;
+    background-color: #2c2830;
+    z-index: 100;
+    top: 50px;
+  }
+  input:checked ~ main {
+    opacity: 0;
+  }
+  .mob__list {
+    list-style: none;
+    padding: 0;
+  }
+  .mob__item {
+    text-align: center;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.36364px;
+
+    color: #ffffff;
+  }
+
+  .mob a {
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 0 auto;
+  }
+  .mob .link {
+    color: #fff;
+  }
+}
+
+.section2 {
+  h2 {
+    margin: 30px 30px;
+    font-size: 42px;
+  }
+  margin-top: 200px;
+  &__boxs {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__box {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .section2__boxs {
+    display: grid;
+    text-align: center;
+  }
+  .section2__box {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .section2 h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+.section3 {
+  margin-top: 100px;
+  height: 210px;
+  // border: 1px solid black;
+  margin-bottom: 30px;
+  background-color: #2d2641;
+  &__texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+
+    h4 {
+      font-size: 42px;
+      width: 400px;
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(187, 187, 187);
+      // border: 2px solid white;
+      padding: 10px 20px;
+      background-color: white;
+      transition: 0.5s;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 525px) {
+  .section3__texts {
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-bottom: 94px;
+    padding-left: 24px;
+    margin-top: 100px;
+    text-align: center;
+    h4 {
+      font-size: 30px;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
